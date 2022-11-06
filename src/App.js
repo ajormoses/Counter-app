@@ -6,16 +6,16 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
+    <div className="App">
+      <BrowserRouter>
         <Routes>
-          <Route path="/home" exact element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/nav" exact element={<Nav />} />
           <Route path="/hookcounter" exact element={<CustomHookCounter />} />
           <Route path="/reducercounter" exact element={<ReducerCounter />} />
         </Routes>
-      </div>
-    </BrowserRouter>
+      </BrowserRouter>
+    </div>
   );
 }
 
