@@ -44,7 +44,7 @@ const ReducerCounter = () => {
         <div className="container">
           <div className="header">
             <Link to="/">
-              <h2 style={{ color: "#c52932" }}>ALTSchool</h2>
+              <h2 style={{ color: "#c52932" }}>Home</h2>
             </Link>
             <div className="header-icon-bar" onClick={handleToggle}>
               {toggle ? (
