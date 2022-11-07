@@ -33,7 +33,7 @@ const CustomHookCounter = () => {
         <div className="container">
           <div className="header">
             <Link to="/">
-              <h2 style={{ color: "#c52932" }}>Home</h2>
+              <h2>Home</h2>
             </Link>
             <div className="header-icon-bar" onClick={handleToggle}>
               {toggle ? (
