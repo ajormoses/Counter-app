@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurger, faRectangleXmark } from "@fortawesome/free-solid-svg-icons";
 import Nav from "./Nav";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [toggle, setToggle] = useState(true);
@@ -15,13 +16,23 @@ const Home = () => {
       <header>
         <div className="container">
           <div className="header">
-            <h2>Home</h2>
+            <Link to="/">
+              <h2 style={{ color: "#c52932" }}>Home</h2>
+            </Link>
             <div className="header-icon-bar" onClick={handleToggle}>
               {toggle ? (
                 <FontAwesomeIcon icon={faBurger} />
               ) : (
                 <FontAwesomeIcon icon={faRectangleXmark} />
               )}
+            </div>
+            <div className="desktop-menu">
+              <Link to="/hookcounter">
+                <h2>CustomHookCounter</h2>
+              </Link>
+              <Link to="/reducercounter">
+                <h2>ReducerCounter</h2>
+              </Link>
             </div>
           </div>
         </div>

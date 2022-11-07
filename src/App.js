@@ -13,6 +13,28 @@ function App() {
         <Route path="/hookcounter" exact element={<CustomHookCounter />} />
         <Route path="/reducercounter" exact element={<ReducerCounter />} />
       </Routes>
+      <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
   );
 }
